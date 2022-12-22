@@ -1,0 +1,31 @@
+{
+  "name": "frontendstore_fin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server/server.js --ignore \"server/subs-db.json\" ",
+    "generate-vapid": "web-push generate-vapid-keys --json > server/vapid.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ramiro413/FrontendStore.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ramiro413/FrontendStore/issues"
+  },
+  "homepage": "https://github.com/Ramiro413/FrontendStore#readme",
+  "dependencies": {
+    "body-parser": "^1.20.1",
+    "express": "^4.18.2",
+    "path": "^0.12.7",
+    "web-push": "^3.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}

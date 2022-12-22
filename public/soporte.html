@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FrontEnd Store</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet" type='text/css'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="pag1.html">
+            <img class="header__logo" src="img/logo.png" alt="Logotipo">
+        </a>
+    </header>
+    <div id="imgUsuario" class="imgSSS"> <img src=""></div>
+    <h1 id="USUARIONAME"></h1>
+    <h4>Eliminar usuario: <input type="submit" value="X" onclick="deleteUser();" class="btnClose"></h4>
+    <nav class="navegacion">
+        <a class="navegacion__enlace" href="pag1.html">Tienda</a>
+        <a class="navegacion__enlace " href="nosotros.html">Nosotros</a>
+        <a class="navegacion__enlace navegacion__enlace--activo" href="soporte.html">Soporte</a>
+    </nav>
+
+    <main class="contenedor">
+
+        <!-- Modal -->
+
+        <!-- Modal -->
+        <div id="modal-mapa" style="z-index: 100" class="oculto">
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <div class="nuevo-mensaje">
+            <textarea id="txtMensaje" placeholder="Nuevo mensaje..." rows="5"></textarea>
+
+            <!-- CAMARA - 1: Agregar contenedor -->
+            <div class="camara-contenedor fadeIn fast oculto" align="center">
+
+                <video id="player" autoplay style="height: 300px;"></video>
+
+                <button id="tomar-foto-btn">
+                    <i class="fa fa-camera"></i>
+                    Tomar Foto
+                </button>
+            </div>
+            <!-- FIN CAMARA - 1 -->
+
+
+        </div>
+
+
+        <!-- boton de enviar -->
+
+        <div id="post-btn" style="z-index: 100" class="fab">
+            <i class="fasss fa fa-paper-plane"></i>
+        </div>
+
+        <div id="location-btn" style="z-index: 100" class="fab-marker">
+            <i class="fa fa-map-marker-alt"></i>
+        </div>
+
+        <!-- Lista de mensajes -->
+        <ul id="timeline" class="timeline">
+
+
+        </ul>
+
+    </main>
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store - Todos los derechos Reservados 2022.</p>
+    </footer>
+    <script src="js/pouchdb-7.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/camara-class.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/aaa.js"></script>
+    <script src="js/protectRutes.js"></script>
+</body>
+
+</html>
